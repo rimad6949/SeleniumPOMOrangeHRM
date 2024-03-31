@@ -27,6 +27,7 @@ public class LoginPage extends BasePage {
 		username_Name.sendKeys("Admin");
 		password_Name.sendKeys("admin123");
 		loginBtn_LinkText.click();
+		
 
 	}
 

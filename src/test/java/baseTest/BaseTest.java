@@ -8,18 +8,24 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class BaseTest {
 
 	public WebDriver driver;
 	public Properties config = new Properties();
 	public FileInputStream fis;
+	public Logger log = LogManager.getLogger(BaseTest.class.getName());
 
 	@BeforeMethod
 	public void setUp() {
@@ -54,10 +60,12 @@ public class BaseTest {
 				opts.addArguments("--incognito");
 				
 				driver = new ChromeDriver(opts);
+				log.info("Chrome browser launched");
 			}
 			else if(config.getProperty("browser").equals("firefox")) {
 				
 				driver = new FirefoxDriver();
+				log.info("Firefox browser launched");
 			}
 			
 			driver.get(config.getProperty("testsiteUrl"));

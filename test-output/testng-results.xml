@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-31T19:44:33Z" name="Default suite" finished-at="2024-03-31T19:44:40Z" duration-ms="6541">
+  <suite started-at="2024-03-31T21:41:38Z" name="Default suite" finished-at="2024-03-31T21:41:46Z" duration-ms="8494">
     <groups>
     </groups>
-    <test started-at="2024-03-31T19:44:33Z" name="Default test" finished-at="2024-03-31T19:44:40Z" duration-ms="6541">
+    <test started-at="2024-03-31T21:41:38Z" name="Default test" finished-at="2024-03-31T21:41:46Z" duration-ms="8494">
       <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@1a6d8329]" started-at="2024-03-31T19:44:33Z" name="setUp" finished-at="2024-03-31T19:44:38Z" duration-ms="5009" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@6d24ffa1]" started-at="2024-03-31T21:41:38Z" name="setUp" finished-at="2024-03-31T21:41:45Z" duration-ms="7059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTest()[pri:0, instance:testcases.LoginPageTest@1a6d8329]" started-at="2024-03-31T19:44:38Z" name="loginPageTest" finished-at="2024-03-31T19:44:39Z" duration-ms="1397" status="PASS">
+        <test-method signature="loginPageTest()[pri:0, instance:testcases.LoginPageTest@6d24ffa1]" started-at="2024-03-31T21:41:45Z" name="loginPageTest" finished-at="2024-03-31T21:41:46Z" duration-ms="1260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@1a6d8329]" started-at="2024-03-31T19:44:39Z" name="tearDown" finished-at="2024-03-31T19:44:40Z" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@6d24ffa1]" started-at="2024-03-31T21:41:46Z" name="tearDown" finished-at="2024-03-31T21:41:46Z" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
