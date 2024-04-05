@@ -12,23 +12,27 @@ public class LoginPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(name = "username")
-	public WebElement username_Name;
-
+	@FindBy(xpath="/html/body/div[1]/header/div/nav/div[2]/div/div[2]/ul/a")
+	public WebElement landingPageloginBtn;
+	
+	@FindBy(name = "email")
+	public WebElement email_textbox;
+	
 	@FindBy(name = "password")
-	public WebElement password_Name;
-
-	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")
-	public WebElement loginBtn_LinkText;
-
+	public WebElement password_textbox;
+	
+	@FindBy(linkText = "Login")
+	public WebElement loginBtn;
+	
 	
 	public void loginIntoApp() {
-
-		username_Name.sendKeys("Admin");
-		password_Name.sendKeys("admin123");
-		loginBtn_LinkText.click();
 		
-
+		landingPageloginBtn.click();
+		email_textbox.sendKeys("dasrima476@gmail.com");
+		password_textbox.sendKeys("Test1234$");
+		loginBtn.click();
+		//return new HomePage(driver);		
+		
 	}
 
 }
